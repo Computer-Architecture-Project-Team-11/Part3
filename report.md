@@ -11,7 +11,10 @@ By looking at the different defenitions above we can assume that when we run dif
 
 Apparently, the duration of the execution does not affect either of the powers above, considering that neither of them have a time dependency.
 
-2.
+2. - We have a system with a certain battery capacitance and using two processors with different power consumtions (first 5W and second 50W).
+   The battery life is directly connected to the CPU clock speed. Specifically, higher clock speed results to shorted battery life. Furthermore, a relation between the clock speed and the power consumption also exists. The higher the power consumption is the higher the clock speed. 
+   - So in our case, since the second processor consumes more power, it can't provide longer duration to the battery.
+   - McPAT only provides information regarding the dynamic and static power of the processor. For this reason we cannot make assumptions regarding the battery life. An auxiliary information from McPAT would be something related to the CPU clock speed.
 
 3. The results provided by McPAT for the processors Xeon and ARM A9 (in this case with print_level 3) are copied in the files Xeon_results.txt and ARM_results.txt respectively.  
 By reviewing these results we deduce that the Xeon processor cannot be more energy efficient than the ARM A9 since both the dynamic and the static(leakage) power dissipation of Xeon is larger than ARM's processor, as shown below:  
@@ -36,7 +39,11 @@ By reviewing these results we deduce that the Xeon processor cannot be more ener
   Runtime Dynamic = 2.96053 W
 ```
 
-
-
-
 ## Second Section
+
+## Referencies
+- [Dynamic-static power](https://www.edaboard.com/threads/what-is-static-power-dissipation-and-dynamic-power-dissipation.67491/)
+- [Dynamic power and leakage](https://acg.cis.upenn.edu/milom/cis501-Fall10/lectures/12_power.pdf)
+- [Clock and battery life relation](https://www.quora.com/Does-CPU-clock-rate-effect-battery-life)
+- [Power and clock speed realtion](https://en.wikipedia.org/wiki/List_of_CPU_power_dissipation_figures)
+- [Processor power dissipation](https://en.wikipedia.org/wiki/Processor_power_dissipation)
