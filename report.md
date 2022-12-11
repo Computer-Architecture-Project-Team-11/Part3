@@ -11,7 +11,32 @@ By looking at the different defenitions above we can assume that when we run dif
 
 Apparently, the duration of the execution does not affect either of the powers above, considering that neither of them have a time dependency.
 
-2. 
+2.
+
+3. The results provided by McPAT for the processors Xeon and ARM A9 (in this case with print_level 3) are copied in the files Xeon_results.txt and ARM_results.txt respectively.  
+By reviewing these results we deduce that the Xeon processor cannot be more energy efficient than the ARM A9 since both the dynamic and the static(leakage) power dissipation of Xeon is larger than ARM's processor, as shown below:  
+
+**Xeon results**:
+```python
+  Peak Power = 134.938 W
+  Total Leakage = 36.8319 W
+  Peak Dynamic = 98.1063 W
+  Subthreshold Leakage = 35.1632 W
+  Subthreshold Leakage with power gating = 16.3977 W
+  Gate Leakage = 1.66871 W
+  Runtime Dynamic = 72.9199 W
+```
+**ARM A9 results**:
+```python
+  Peak Power = 1.74189 W
+  Total Leakage = 0.108687 W
+  Peak Dynamic = 1.6332 W
+  Subthreshold Leakage = 0.0523094 W
+  Gate Leakage = 0.0563774 W
+  Runtime Dynamic = 2.96053 W
+```
+
+
 
 
 ## Second Section
