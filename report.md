@@ -38,6 +38,7 @@ By reviewing these results we deduce that the Xeon processor cannot be more ener
   Gate Leakage = 0.0563774 W
   Runtime Dynamic = 2.96053 W
 ```
+Also, since the clock speed of Xeon is 50 times higher than ARM A9, as mentioned and explained in the previous section the battery life of Xeon is lower than ARM A9 and consequently Xeon is less energy efficient.
 
 ## Second Section
 
