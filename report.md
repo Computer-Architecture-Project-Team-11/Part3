@@ -42,7 +42,27 @@ Also, since the clock speed of Xeon is 50 times higher than ARM A9, as mentioned
 
 ## Second Section
 
-1.
+1. Below are presented two results for each benchmark :
+   - The Energy Consumtion (EC) : EC = (Runtime Dynamic + Subthreshold Leakage + Gate Leakage) * Simulation_Time | core + (Runtime Dynamic + Subthreshold Leakage + Gate Leakage) * Simulation_Time | L2
+   - The Energy-Delay-Area-Product (EDAP) :  EDAP = EC * Area | core + EC * Area | L2
+
+   We used the results from core and L2.
+   
+   * **Spec_bzip**
+       * EC = 
+       * EDAP = 
+   * **Spec_mcf**
+       * EC = 
+       * EDAP = 
+   * **Spec_hmmer**  
+       * EC = 
+       * EDAP = 
+   * **Spec_sjeng**
+       * EC = 
+       * EDAP = 
+   * **Spec_lbm**
+       * EC = 
+       * EDAP = 
 
 2.The following graphs depict the effect the parameters we changed on the second part of the project have on the power consumption for each benchmark.
 
