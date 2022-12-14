@@ -46,13 +46,24 @@ Also, since the clock speed of Xeon is 50 times higher than ARM A9, as mentioned
 
 2.The following graphs depict the effect the parameters we changed on the second part of the project have on the power consumption for each benchmark.
 
+   **Spec_bzip**  
+
+   ![Screenshot from 2022-12-14 22-40-34](https://user-images.githubusercontent.com/105559292/207709673-090b977e-9af1-4107-af93-fb70d87086b0.png)
+
+   **Spec_mcf**
+
+   ![Screenshot from 2022-12-14 22-39-31](https://user-images.githubusercontent.com/105559292/207709582-8839ad15-bfa3-46f1-a540-4c6135580691.png)
+   
    **Spec_hmmer**  
+
    ![hmmer](https://user-images.githubusercontent.com/118213678/207699752-722a39e1-6c14-497c-a922-20346903ba06.png)
 
    **Spec_sjeng**
+
    ![sjeng](https://user-images.githubusercontent.com/118213678/207699989-7a3f7f66-cfa0-4bcf-ad5c-206e8459e4dd.png)
    
    **Spec_lbm**
+
    ![lbm](https://user-images.githubusercontent.com/118213678/207700099-984e6bab-8dba-494a-8803-1f3b493550bc.png)
 
 
