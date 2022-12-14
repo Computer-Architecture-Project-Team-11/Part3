@@ -42,6 +42,24 @@ Also, since the clock speed of Xeon is 50 times higher than ARM A9, as mentioned
 
 ## Second Section
 
+1.
+
+2.The following graphs depict the effect the parameters we changed on the second part of the project have on the power consumption for each benchmark.
+
+   **Spec_hmmer**  
+   ![hmmer](https://user-images.githubusercontent.com/118213678/207699752-722a39e1-6c14-497c-a922-20346903ba06.png)
+
+   **Spec_sjeng**
+   ![sjeng](https://user-images.githubusercontent.com/118213678/207699989-7a3f7f66-cfa0-4bcf-ad5c-206e8459e4dd.png)
+   
+   **Spec_lbm**
+   ![lbm](https://user-images.githubusercontent.com/118213678/207700099-984e6bab-8dba-494a-8803-1f3b493550bc.png)
+
+
+
+
+
+
 ## Referencies
 - [Dynamic-static power](https://www.edaboard.com/threads/what-is-static-power-dissipation-and-dynamic-power-dissipation.67491/)
 - [Dynamic power and leakage](https://acg.cis.upenn.edu/milom/cis501-Fall10/lectures/12_power.pdf)
