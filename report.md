@@ -105,6 +105,14 @@ Also, since the clock speed of Xeon is 50 times higher than ARM A9, as mentioned
        - l2 associativity = 16
    - **Lab Exercise 3**: To reduce the power consumption 
 
+## Reliability of the results
+ Below are presented some factors that affected the reliability of our results and caused possible mistakes:
+- human mistakes
+- a mistake of one program can be transfered to the next
+- ideal simulation using the benchmarks. not as it is in reality systems
+- 
+
+
 
 ## Referencies
 - [Dynamic-static power](https://www.edaboard.com/threads/what-is-static-power-dissipation-and-dynamic-power-dissipation.67491/)
