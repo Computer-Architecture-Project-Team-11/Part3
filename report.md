@@ -47,22 +47,26 @@ Also, since the clock speed of Xeon is 50 times higher than ARM A9, as mentioned
    - The Energy-Delay-Area-Product (EDAP) :  EDAP = EC * Area | core + EC * Area | L2
 
    We used the results from core and L2.
-   
-   * **Spec_bzip**
-       * EC = 
-       * EDAP = 
-   * **Spec_mcf**
-       * EC = 
-       * EDAP = 
-   * **Spec_hmmer**  
-       * EC = 
-       * EDAP = 
-   * **Spec_sjeng**
-       * EC = 
-       * EDAP = 
-   * **Spec_lbm**
-       * EC = 
-       * EDAP = 
+
+  **Table for EC** 
+
+  | Parameters | specbzip | specmcf | spechmmer | sjeng | speclbm |
+  | ------ | ------ | ------ | ------ | ------ | ------ |
+  | x2 cache line size | 13628.773  | -4384.2975 | 21222.0902 | - | 406.364247 |
+  | x2 l1 size and assoc | 8994.8242  | 1785.7014 | 99724.6254 | - | 5673076.88 |
+  | x2 cache line size and l1 size, assoc and l2 assoc | 5496.0587 | 1493.1104 | 28368.586 | 598.311589 | 774.390171 |
+  | x4 cache line size and x2 l1 size, assoc and l2 assoc | - | - | - | 423.723846 | - |
+  | x4 cache line size and l2 assoc and x2 l1 size, assoc | - | - | - | 423.309343 | - |
+
+  **Table for EDAP** 
+
+  | Parameters | specbzip | specmcf | spechmmer | sjeng | speclbm |
+  | ------ | ------ | ------ | ------ | ------ | ------ |
+  | x2 cache line size | 13628.773  | -4384.2975 | 21222.0902 | - | 406.364247 |
+  | x2 l1 size and assoc | 8994.8242  | 1785.7014 | 99724.6254 | - | 5673076.88 |
+  | x2 cache line size and l1 size, assoc and l2 assoc | 5496.0587 | 1493.1104 | 28368.586 | 598.311589 | 774.390171 |
+  | x4 cache line size and x2 l1 size, assoc and l2 assoc | - | - | - | 423.723846 | - |
+  | x4 cache line size and l2 assoc and x2 l1 size, assoc | - | - | - | 423.309343 | - |
 
 2.The following graphs depict the effect the parameters we changed on the second part of the project have on the power consumption for each benchmark.
 
@@ -86,9 +90,20 @@ Also, since the clock speed of Xeon is 50 times higher than ARM A9, as mentioned
 
    ![lbm](https://user-images.githubusercontent.com/118213678/207700099-984e6bab-8dba-494a-8803-1f3b493550bc.png)
 
+3. The ideal architecture combines the following features:
+   - good performance
+   - low cost
+   - low power consumption 
 
-
-
+  Based on the results of all three lab exercises we conclude in the following assumptions:
+   - **Lab Exercise 1**: Since the power consumption depends on the simulation time, we assume that by simulating for  shorter time we can achieve a lower consumption. As mentioned in the Lab Exercise 1, we can decrease the simulation time by using the MinorCPU model instead of the TimingSimpleCPU one. Also the SimpleMemory type contributes to the decreament of the sim_time.
+   - **Lab Exercise 2**: Based on the majority of the banchmarks, we can achieve the best combination of good performance and low cost by using the following values for the system parameters:
+       - cache line size = 128
+       - l1 size = 192 KB (li+ld)
+       - l1 associativity = 4
+       - l2 size = 2MB
+       - l2 associativity = 16
+   - **Lab Exercise 3**: To reduce the power consumption 
 
 
 ## Referencies
