@@ -118,7 +118,14 @@ Also, since the clock speed of Xeon is 50 times higher than ARM A9, as mentioned
            - l2 associativity = 16
 
    So we need to a solution that combines most of the above. We came up with these parameters and values:
-   - 
+   - use a `MinorCPU` model to achieve a short simulation time and **reduce the power consumption**
+   - use the `SimpleMemory` type to achieve a short simulation time and **reduce the power consumption**
+   - set the `cache line size` at 128, since it seems to give positive results in all aspects
+   - for the rest of the system's parameters as shown in **Lab Exercise 3** results they differ among the banchmarks. If we take into account the majority of the positive results we can conclude to the following values: 
+      - `l1 size` = 192 KB
+      - `l1 associativity` = 4
+      - `l2 size` = 2 MB
+      - `l2 associativity` = 16
 
 ## Reliability of the results
  Below are presented some factors that affected the reliability of our results and caused possible mistakes:
@@ -126,8 +133,6 @@ Also, since the clock speed of Xeon is 50 times higher than ARM A9, as mentioned
 - a mistake of one program can be transfered to the next
 - ideal simulation using the benchmarks. not as it is in reality systems
 - in the last part when asked to find the best architecture model we selected specific parameters to achive good performance and low cost and consumption. Although the values selected for these parameters contribute in achieving the desired result (either perfrmance or cost or consumption), they might affect negatively the other 2 results. 
-
-
 
 ## Referencies
 - [Dynamic-static power](https://www.edaboard.com/threads/what-is-static-power-dissipation-and-dynamic-power-dissipation.67491/)
