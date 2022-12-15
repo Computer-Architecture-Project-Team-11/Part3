@@ -101,16 +101,31 @@ Also, since the clock speed of Xeon is 50 times higher than ARM A9, as mentioned
        - cache line size = 128
        - l1 size = 192 KB (li+ld)
        - l1 associativity = 4
-       - l2 size = 2MB
+       - l2 size = 2 MB
        - l2 associativity = 16
-   - **Lab Exercise 3**: To reduce the power consumption 
+   - **Lab Exercise 3**: Based on the results from the energy consumption for each change on each benchmark we can see that the more power efficient changes are: 
+       - for bzip and mcf benchmarks:
+           - cache line size = 128
+           - l1 size = 86 KB (li+ld)
+           - l1 associativity = 2
+           - l2 size = 1 MB
+           - l2 associativity = 8
+       - for hmmer, sjeng and lbm benchmarks:
+           - cache line size = 128
+           - l1 size = 192 KB (li+ld)
+           - l1 associativity = 4
+           - l2 size = 2 MB
+           - l2 associativity = 16
+
+   So we need to a solution that combines most of the above. We came up with these parameters and values:
+   - 
 
 ## Reliability of the results
  Below are presented some factors that affected the reliability of our results and caused possible mistakes:
 - human mistakes
 - a mistake of one program can be transfered to the next
 - ideal simulation using the benchmarks. not as it is in reality systems
-- 
+- in the last part when asked to find the best architecture model we selected specific parameters to achive good performance and low cost and consumption. Although the values selected for these parameters contribute in achieving the desired result (either perfrmance or cost or consumption), they might affect negatively the other 2 results. 
 
 
 
