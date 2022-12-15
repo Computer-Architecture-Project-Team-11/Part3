@@ -62,9 +62,9 @@ Also, since the clock speed of Xeon is 50 times higher than ARM A9, as mentioned
 
   | Parameters | specbzip | specmcf | spechmmer | sjeng | speclbm |
   | ------ | ------ | ------ | ------ | ------ | ------ |
-  | x2 cache line size | 13628.773  | -4384.2975 | 1.23102 | - | 2.443902 |
-  | x2 l1 size and assoc | 8994.8242  | 1785.7014 | 1.29909 | - | 3.188415 |
-  | x2 cache line size and l1 size, assoc and l2 assoc | 5496.0587 | 1493.1104 | 0.649438 | 6.3382373 | 2.68664 |
+  | x2 cache line size | 1.8645  | 1.2234 | 1.23102 | - | 2.443902 |
+  | x2 l1 size and assoc | 1.7224  | 4.6243 | 1.29909 | - | 3.188415 |
+  | x2 cache line size and l1 size, assoc and l2 assoc | 3.7654 | 2.5676 | 0.649438 | 6.3382373 | 2.68664 |
   | x4 cache line size and x2 l1 size, assoc and l2 assoc | - | - | - | 89.785626 | - |
   | x4 cache line size and l2 assoc and x2 l1 size, assoc | - | - | - | 89.78364 | - |
 
