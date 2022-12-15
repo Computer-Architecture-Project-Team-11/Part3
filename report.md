@@ -52,21 +52,21 @@ Also, since the clock speed of Xeon is 50 times higher than ARM A9, as mentioned
 
   | Parameters | specbzip | specmcf | spechmmer | sjeng | speclbm |
   | ------ | ------ | ------ | ------ | ------ | ------ |
-  | x2 cache line size | 0.14914 | 0.0996557 | 21222.0902 | - | 406.364247 |
-  | x2 l1 size and assoc | 0.13976 | 0.119675 | 99724.6254 | - | 5673076.88 |
-  | x2 cache line size and l1 size, assoc and l2 assoc | 0.2082 | 0.1469 | 28368.586 | 598.311589 | 774.390171 |
-  | x4 cache line size and x2 l1 size, assoc and l2 assoc | - | - | - | 423.723846 | - |
-  | x4 cache line size and l2 assoc and x2 l1 size, assoc | - | - | - | 423.309343 | - |
+  | x2 cache line size | 0.14914 | 0.0996557 | 0.107665 | - | 0.203184 |
+  | x2 l1 size and assoc | 0.13976 | 0.119675 | 1.105285 | - | 0.2593412 |
+  | x2 cache line size and l1 size, assoc and l2 assoc | 0.2082 | 0.1469 | 0.03825 | 0.3661485 | 0.154767 |
+  | x4 cache line size and x2 l1 size, assoc and l2 assoc | - | - | - | 1.564907 | - |
+  | x4 cache line size and l2 assoc and x2 l1 size, assoc | - | - | - | 1.563932 | - |
 
   **Table for EDAP** 
 
   | Parameters | specbzip | specmcf | spechmmer | sjeng | speclbm |
   | ------ | ------ | ------ | ------ | ------ | ------ |
-  | x2 cache line size | 13628.773  | -4384.2975 | 21222.0902 | - | 406.364247 |
-  | x2 l1 size and assoc | 8994.8242  | 1785.7014 | 99724.6254 | - | 5673076.88 |
-  | x2 cache line size and l1 size, assoc and l2 assoc | 5496.0587 | 1493.1104 | 28368.586 | 598.311589 | 774.390171 |
-  | x4 cache line size and x2 l1 size, assoc and l2 assoc | - | - | - | 423.723846 | - |
-  | x4 cache line size and l2 assoc and x2 l1 size, assoc | - | - | - | 423.309343 | - |
+  | x2 cache line size | 13628.773  | -4384.2975 | 1.23102 | - | 2.443902 |
+  | x2 l1 size and assoc | 8994.8242  | 1785.7014 | 1.29909 | - | 3.188415 |
+  | x2 cache line size and l1 size, assoc and l2 assoc | 5496.0587 | 1493.1104 | 0.649438 | 6.3382373 | 2.68664 |
+  | x4 cache line size and x2 l1 size, assoc and l2 assoc | - | - | - | 89.785626 | - |
+  | x4 cache line size and l2 assoc and x2 l1 size, assoc | - | - | - | 89.78364 | - |
 
 2.The following graphs depict the effect the parameters we changed on the second part of the project have on the power consumption for each benchmark.
 
