@@ -133,6 +133,7 @@ Also, since the clock speed of Xeon is 50 times higher than ARM A9, as mentioned
 - a mistake of one program can be transfered to the next
 - ideal simulation using the benchmarks. not as it is in reality systems
 - in the last part when asked to find the best architecture model we selected specific parameters to achive good performance and low cost and consumption. Although the values selected for these parameters contribute in achieving the desired result (either perfrmance or cost or consumption), they might affect negatively the other 2 results. 
+- when experimenting with simulations we can select and test lots of chenges in the system's parameters and observe their affect on the performance, cost and consumption. Although, the simulation range does not seem to have a lot of limitations in terms of the changes that can be apllied, there may be a change that gives better results and can be applied to a real time system but not been tested through a simulation. 
 
 ## Referencies
 - [Dynamic-static power](https://www.edaboard.com/threads/what-is-static-power-dissipation-and-dynamic-power-dissipation.67491/)
