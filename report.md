@@ -133,11 +133,15 @@ Also, since the clock speed of Xeon is 50 times higher than ARM A9, as mentioned
 - Since we are using two programs, if a mistake is commited on gem5, it will be transfered to the second program, as the output of gem5 is the input of McPAT. 
 - The simulations that occur on gem5 and on McPAT are based on ideal conditions, while running them in real life there may be some outside parameters that we don't take into consideration.  
 - In the last part when asked to find the best architecture model we selected specific parameters to achive good performance and low cost and consumption. Although the values selected for these parameters contribute in achieving the desired result (either perfrmance or cost or consumption), they might affect negatively the other 2 results. 
-- When experimenting with simulations we can select and test lots of changes in the system's parameters and observe their affect on the performance, cost and consumption. Although, the simulation range does not seem to have a lot of limitations in terms of the changes that can be apllied, there may be a change that gives better results and can be applied to a real time system but not been tested through a simulation. 
+- When experimenting with simulations we can select and test lots of changes in the system's parameters and observe their affect on the performance, cost and consumption. Although, the simulation range does not seem to have a lot of limitations in terms of the changes that can be apllied, there may be a change that gives better results and can be applied to a real time system but not been tested through a simulation.  
+- There is also the fallacy that benchmarks remain valid forever. When a simulation is executed, the benchmarks that are used must be up to date with the latest releases and their features comply with the real systems, or else the results will not be in compliance with the ones from actual execution. W e have not confirmed that the benchmarks we used are not abandoned.
+- Another mistake that possibly led to unreliable results is the fact that we considered in some cases that the CPI  and the clock speed are independent in terms of affecting the overall speed. They are, in fact, affecting the overall speed differently when changed simultaneously than when changed separately.
 
 ## Referencies
 - [Dynamic-static power](https://www.edaboard.com/threads/what-is-static-power-dissipation-and-dynamic-power-dissipation.67491/)
 - [Dynamic power and leakage](https://acg.cis.upenn.edu/milom/cis501-Fall10/lectures/12_power.pdf)
 - [Clock and battery life relation](https://www.quora.com/Does-CPU-clock-rate-effect-battery-life)
 - [Power and clock speed realtion](https://en.wikipedia.org/wiki/List_of_CPU_power_dissipation_figures)
-- [Processor power dissipation](https://en.wikipedia.org/wiki/Processor_power_dissipation)
+- [Processor power dissipation](https://en.wikipedia.org/wiki/Processor_power_dissipation)  
+- Αρχιτεκτονική Υπολογιστών: Μια ποσοτική προσέγγιση, 6η Αμερικάνικη Έκδοση, John L. Hennessy, David A. Patterson, σελ. 87, πλάνη 2.
+- Αρχιτεκτονική Υπολογιστών: Μια ποσοτική προσέγγιση, 6η Αμερικάνικη Έκδοση, John L. Hennessy, David A. Patterson, σελ. 269. 
