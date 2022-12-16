@@ -96,7 +96,7 @@ Also, since the clock speed of Xeon is 50 times higher than ARM A9, as mentioned
    - low power consumption 
 
   Based on the results of all three lab exercises we conclude in the following assumptions:
-   - **Lab Exercise 1**: Since the power consumption depends on the simulation time, we assume that by simulating for  shorter time we can achieve a lower consumption. As mentioned in the Lab Exercise 1, we can decrease the simulation time by using the MinorCPU model instead of the TimingSimpleCPU one. Also the SimpleMemory type contributes to the decreament of the sim_time.
+   - **Lab Exercise 1**: Since the power consumption depends on the simulation time, we assume that by simulating for  shorter time we can achieve a lower consumption. As mentioned in the Lab Exercise 1, we can decrease the simulation time by using the MinorCPU model instead of the TimingSimpleCPU one. Also the SimpleMemory type contributes to the decreament of the sim_seconds.
    - **Lab Exercise 2**: Based on the majority of the banchmarks, we can achieve the best combination of good performance and low cost by using the following values for the system parameters:
        - cache line size = 128
        - l1 size = 192 KB (li+ld)
@@ -106,7 +106,7 @@ Also, since the clock speed of Xeon is 50 times higher than ARM A9, as mentioned
    - **Lab Exercise 3**: Based on the results from the energy consumption for each change on each benchmark we can see that the more power efficient changes are: 
        - for bzip and mcf benchmarks:
            - cache line size = 128
-           - l1 size = 86 KB (li+ld)
+           - l1 size = 96 KB (li+ld)
            - l1 associativity = 2
            - l2 size = 1 MB
            - l2 associativity = 8
@@ -129,11 +129,11 @@ Also, since the clock speed of Xeon is 50 times higher than ARM A9, as mentioned
 
 ## Reliability of the results
  Below are presented some factors that affected the reliability of our results and caused possible mistakes:
-- human mistakes
-- a mistake of one program can be transfered to the next
-- ideal simulation using the benchmarks. not as it is in reality systems
-- in the last part when asked to find the best architecture model we selected specific parameters to achive good performance and low cost and consumption. Although the values selected for these parameters contribute in achieving the desired result (either perfrmance or cost or consumption), they might affect negatively the other 2 results. 
-- when experimenting with simulations we can select and test lots of chenges in the system's parameters and observe their affect on the performance, cost and consumption. Although, the simulation range does not seem to have a lot of limitations in terms of the changes that can be apllied, there may be a change that gives better results and can be applied to a real time system but not been tested through a simulation. 
+- Human mistakes: It's possible that we might have made a few mistakes when we wrote the commands on the terminal or when we tranfered our data. 
+- Since we are using two programs, if a mistake is commited on gem5, it will be transfered to the second program, as the output of gem5 is the input of McPAT. 
+- The simulations that occur on gem5 and on McPAT are based on ideal conditions, while running them in real life there may be some outside parameters that we don't take into consideration.  
+- In the last part when asked to find the best architecture model we selected specific parameters to achive good performance and low cost and consumption. Although the values selected for these parameters contribute in achieving the desired result (either perfrmance or cost or consumption), they might affect negatively the other 2 results. 
+- When experimenting with simulations we can select and test lots of changes in the system's parameters and observe their affect on the performance, cost and consumption. Although, the simulation range does not seem to have a lot of limitations in terms of the changes that can be apllied, there may be a change that gives better results and can be applied to a real time system but not been tested through a simulation. 
 
 ## Referencies
 - [Dynamic-static power](https://www.edaboard.com/threads/what-is-static-power-dissipation-and-dynamic-power-dissipation.67491/)
